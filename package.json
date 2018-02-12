@@ -1,0 +1,31 @@
+{
+  "name": "plcnext",
+  "version": "0.1.0",
+  "description": "Node.js module for use with PLCnext Technology controllers from Phoenix Contact",
+  "main": "plcnext.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wexford/plcnext.git"
+  },
+  "keywords": [
+    "plcnext",
+    "plc",
+    "industrial automation"
+  ],
+  "author": "Martin Boers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wexford/plcnext/issues"
+  },
+  "homepage": "https://github.com/Wexford/plcnext#readme",
+  "dependencies": {
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0"
+  }
+}
