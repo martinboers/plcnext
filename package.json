@@ -1,7 +1,7 @@
 {
   "name": "plcnext",
   "version": "0.1.0",
-  "description": "Node.js module for use with PLCnext Technology controllers from Phoenix Contact",
+  "description": "A node package for use with PLCnext Technology controllers from Phoenix Contact.",
   "main": "plcnext.js",
   "scripts": {
     "test": "mocha --reporter spec"
