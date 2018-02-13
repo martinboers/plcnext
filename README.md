@@ -22,7 +22,7 @@ plcnext.setConnections(linkDataArray, "/opt/plcnext/projects/PCWE/Plc/Gds/PCWE.g
 
 ## Motivation
 
-This package includes functions for reading and writing information from PLCnext configuration files.
+This package includes functions for reading and writing information from PLCnext configuration files.  
 These functions can be used to build node applications that run directly on the PLCnext platform.
 
 ## Installation
@@ -33,26 +33,26 @@ npm install plcnext
 
 The schema definition for objects returned by functions are documented separately.
 
-**getGlobalObjects ()**
+**getGlobalObjects ()**  
 Returns an array of global objects from the PLC related to the eCLR, ESM, Axioline bus and Profinet interface.
 
-**getIoModules (ticFileName)**
+**getIoModules (ticFileName)**  
 Returns an array of IO modules configured in the TIC file.
 
-**getProjects ()**
+**getProjects ()**  
 Returns an array containing the names of all projects stored on the PLC.
 
-**getPrograms (metaConfigFilename)**
+**getPrograms (metaConfigFilename)**  
 Returns an array of library/component/program definitions contained in the metadata configuration file.
 
-**getProgramInstances (acfConfigFilename, esmConfigFilename)**
+**getProgramInstances (acfConfigFilename, esmConfigFilename)**  
 Returns an array of component/program instances contained in the ACF and ESM configuration files.
 
-**getConnections (gdsFileName)**
+**getConnections (gdsFileName)**  
 Returns an array of connections contained in the GDS configuration file.
 Connections may be between ports on program instances, I/O modules or global objects.
 
-**setConnections (linkData, gdsFileName)**
+**setConnections (linkData, gdsFileName)**  
 Writes the connections defined in linkData to the GDS configuration file.
 
 ## Tests
