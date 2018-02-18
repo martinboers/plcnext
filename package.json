@@ -1,6 +1,6 @@
 {
   "name": "plcnext",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A node package for use with PLCnext Technology controllers from Phoenix Contact.",
   "main": "plcnext.js",
   "scripts": {
