@@ -8,17 +8,14 @@ describe("PC Worx Integrator", function() {
   it("has a getGlobalObjects method", function(){
     expect(plcnext.getGlobalObjects).to.be.a('function');
   });
-  it("has a getProjects method", function(){
-    expect(plcnext.getProjects).to.be.a('function');
-  });
   it("has a getIoModules method", function(){
     expect(plcnext.getIoModules).to.be.a('function');
   });
   it("has a getPrograms method", function(){
     expect(plcnext.getPrograms).to.be.a('function');
   });
-  it("has a getTasks method", function(){
-    expect(plcnext.getTasks).to.be.a('function');
+  it("has a getEsmConfig method", function(){
+    expect(plcnext.getEsmConfig).to.be.a('function');
   });
   it("has a getProgramInstances method", function(){
     expect(plcnext.getProgramInstances).to.be.a('function');
@@ -47,14 +44,6 @@ describe("PC Worx Integrator", function() {
     });
   });
 
-  describe("Projects", function() {
-    it("lists all the projects on the PLC", function() {
-      var projects = plcnext.getProjects();
-      expect(projects).to.be.an('array');
-      expect(projects).to.have.lengthOf(4);
-    });
-  });
-
   describe("Project programs", function() {
     it("describes the interface of all the programs in a project", function() {
       var programs = plcnext.getPrograms("/opt/plcnext/projects/PCWE/Plc/Meta/PCWE.meta.config");
@@ -64,10 +53,13 @@ describe("PC Worx Integrator", function() {
     });
   });
 
-  describe("Project tasks", function() {
-    it("lists all the tasks in a project", function() {
-      expect(true).to.equal(true);
-
+  describe("ESM configuration", function() {
+    it("provides a complete ESM configuration", function() {
+      var esmConfig = plcnext.getEsmConfig("/opt/plcnext/projects/PCWE/Plc/Esm/PCWE.esm.config",
+      "/opt/plcnext/projects/PCWE/Plc/Plm/PCWE.acf.config");
+      expect(esmConfig).to.be.an('array');
+      expect(esmConfig).to.have.lengthOf(5);
+      // TODO: Validate the JSON against a schema ... ?
     });
   });
 

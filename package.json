@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Wexford/plcnext#readme",
   "dependencies": {
     "glob": "^7.1.2",
+    "npm": "^5.7.1",
     "xml2js": "^0.4.19"
   },
   "devDependencies": {

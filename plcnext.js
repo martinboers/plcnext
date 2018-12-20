@@ -1,7 +1,7 @@
 /**
  * @file A node package for use with PLCnext Technology controllers.
  * @module plcnext
- * @version 0.1.2
+ * @version 0.1.3
  * @author Martin Boers 
  * @license
  * Copyright (c) 2018 Martin Boers
@@ -87,51 +87,141 @@ exports.getGlobalObjects = function () {
       name: 'AxlC',
       leftArray: [],
       rightArray: [
-        { portId: 'AXIO_DIAG_STATUS_REG_HI', text: 'AXIO_DIAG_STATUS_REG_HI', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_LOW', text: 'AXIO_DIAG_STATUS_REG_LOW', type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_REG_HI', text: 'AXIO_DIAG_PARAM_REG_HI', type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_REG_LOW', text: 'AXIO_DIAG_PARAM_REG_LOW', type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_2_REG_HI', text: 'AXIO_DIAG_PARAM_2_REG_HI', type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_2_REG_LOW', text: 'AXIO_DIAG_PARAM_2_REG_LOW', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_PF', text: 'AXIO_DIAG_STATUS_REG_PF', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_BUS', text: 'AXIO_DIAG_STATUS_REG_BUS', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_RUN', text: 'AXIO_DIAG_STATUS_REG_RUN', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_ACT', text: 'AXIO_DIAG_STATUS_REG_ACT', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_RDY', text: 'AXIO_DIAG_STATUS_REG_RDY', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_SYSFAIL', text: 'AXIO_DIAG_STATUS_REG_SYSFAIL', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_PW', text: 'AXIO_DIAG_STATUS_REG_PW', type: 'uint16' }
+        { portId: 'AXIO_DIAG_STATUS_REG_HI',
+          text: 'AXIO_DIAG_STATUS_REG_HI',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_STATUS_REG_LOW',
+          text: 'AXIO_DIAG_STATUS_REG_LOW',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_PARAM_REG_HI',
+          text: 'AXIO_DIAG_PARAM_REG_HI',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_PARAM_REG_LOW',
+          text: 'AXIO_DIAG_PARAM_REG_LOW',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_PARAM_2_REG_HI',
+          text: 'AXIO_DIAG_PARAM_2_REG_HI',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_PARAM_2_REG_LOW',
+          text: 'AXIO_DIAG_PARAM_2_REG_LOW',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_STATUS_REG_PF',
+          text: 'AXIO_DIAG_STATUS_REG_PF',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_STATUS_REG_BUS',
+          text: 'AXIO_DIAG_STATUS_REG_BUS',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_STATUS_REG_RUN',
+          text: 'AXIO_DIAG_STATUS_REG_RUN',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_STATUS_REG_ACT',
+          text: 'AXIO_DIAG_STATUS_REG_ACT',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_STATUS_REG_RDY',
+          text: 'AXIO_DIAG_STATUS_REG_RDY',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_STATUS_REG_SYSFAIL',
+          text: 'AXIO_DIAG_STATUS_REG_SYSFAIL',
+          type: 'uint16' },
+        { portId: 'AXIO_DIAG_STATUS_REG_PW',
+          text: 'AXIO_DIAG_STATUS_REG_PW',
+          type: 'uint16' }
       ]
     },
     {
       key: 'Arp.Io.FbIo.PnC/',
       name: 'PnC',
       leftArray: [
-        { portId: 'PNIO_FORCE_FAILSAFE', text: 'PNIO_FORCE_FAILSAFE', type: 'bit' }
+        {
+          portId: 'PNIO_FORCE_FAILSAFE',
+          text: 'PNIO_FORCE_FAILSAFE',
+          type: 'bit'
+        }
       ],
       rightArray: [
-        { portId: 'PNIO_SYSTEM_BF', text: 'PNIO_SYSTEM_BF', type: 'bit' },
-        { portId: 'PNIO_SYSTEM_SF', text: 'PNIO_SYSTEM_SF', type: 'bit' },
-        { portId: 'PNIO_MAINTENANCE_DEMANDED', text: 'PNIO_MAINTENANCE_DEMANDED', type: 'bit' },
-        { portId: 'PNIO_MAINTENANCE_REQUIRED', text: 'PNIO_MAINTENANCE_REQUIRED', type: 'bit' },
-        { portId: 'PNIO_CONFIG_STATUS', text: 'PNIO_CONFIG_STATUS', type: 'bit' },
-        { portId: 'PNIO_CONFIG_STATUS_ACTIVE', text: 'PNIO_CONFIG_STATUS_ACTIVE', type: 'bit' },
-        { portId: 'PNIO_CONFIG_STATUS_READY', text: 'PNIO_CONFIG_STATUS_READY', type: 'bit' },
-        { portId: 'PNIO_CONFIG_STATUS_CFG_FAULT', text: 'PNIO_CONFIG_STATUS_CFG_FAULT', type: 'bit' }
+        {
+          portId: 'PNIO_SYSTEM_BF',
+          text: 'PNIO_SYSTEM_BF',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_SYSTEM_SF',
+          text: 'PNIO_SYSTEM_SF',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_MAINTENANCE_DEMANDED',
+          text: 'PNIO_MAINTENANCE_DEMANDED',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_MAINTENANCE_REQUIRED',
+          text: 'PNIO_MAINTENANCE_REQUIRED',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_CONFIG_STATUS',
+          text: 'PNIO_CONFIG_STATUS',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_CONFIG_STATUS_ACTIVE',
+          text: 'PNIO_CONFIG_STATUS_ACTIVE',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_CONFIG_STATUS_READY',
+          text: 'PNIO_CONFIG_STATUS_READY',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_CONFIG_STATUS_CFG_FAULT',
+          text: 'PNIO_CONFIG_STATUS_CFG_FAULT',
+          type: 'bit'
+        }
       ]
     },
     {
       key: 'Arp.Io.FbIo.PnD/',
       name: 'PnD',
       leftArray: [
-        { portId: 'PND_S1_OUTPUTS', text: 'PND_S1_OUTPUTS', type: 'uint16' }
+        {
+          portId: 'PND_S1_OUTPUTS',
+          text: 'PND_S1_OUTPUTS',
+          type: 'uint16'
+        }
       ],
       rightArray: [
-        { portId: 'PND_S1_PLC_RUN', text: 'PND_S1_PLC_RUN', type: 'bit' },
-        { portId: 'PND_S1_VALID_DATA_CYCLE', text: 'PND_S1_VALID_DATA_CYCLE', type: 'bit' },
-        { portId: 'PND_S1_OUTPUT_STATUS_GOOD', text: 'PND_S1_OUTPUT_STATUS_GOOD', type: 'bit' },
-        { portId: 'PND_S1_INPUT_STATUS_GOOD', text: 'PND_S1_INPUT_STATUS_GOOD', type: 'bit' },
-        { portId: 'PND_S1_DATA_LENGTH', text: 'PND_S1_DATA_LENGTH', type: 'uint16' },
-        { portId: 'PND_S1_INPUTS', text: 'PND_S1_INPUTS', type: 'uint16' }
+        {
+          portId: 'PND_S1_PLC_RUN',
+          text: 'PND_S1_PLC_RUN',
+          type: 'bit'
+        },
+        {
+          portId: 'PND_S1_VALID_DATA_CYCLE',
+          text: 'PND_S1_VALID_DATA_CYCLE',
+          type: 'bit'
+        },
+        {
+          portId: 'PND_S1_OUTPUT_STATUS_GOOD',
+          text: 'PND_S1_OUTPUT_STATUS_GOOD',
+          type: 'bit'
+        },
+        {
+          portId: 'PND_S1_INPUT_STATUS_GOOD',
+          text: 'PND_S1_INPUT_STATUS_GOOD',
+          type: 'bit'
+        },
+        {
+          portId: 'PND_S1_DATA_LENGTH',
+          text: 'PND_S1_DATA_LENGTH',
+          type: 'uint16'
+        },
+        {
+          portId: 'PND_S1_INPUTS',
+          text: 'PND_S1_INPUTS',
+          type: 'uint16'
+        }
       ]
     },
     {
@@ -139,116 +229,480 @@ exports.getGlobalObjects = function () {
       name: 'Esm',
       leftArray: [],
       rightArray: [
-        { portId: 'ESM_COUNT', text: 'ESM_COUNT', type: 'uint16' },
-        { portId: 'ESM_1_TASKS_USED', text: 'ESM_1_TASKS_USED', type: 'uint16' },
-        { portId: 'ESM_1_TASK_1', text: 'ESM_1_TASK_1', type: 'bit' },
-        { portId: 'ESM_1_TASK_2', text: 'ESM_1_TASK_2', type: 'bit' },
-        { portId: 'ESM_1_TASK_3', text: 'ESM_1_TASK_3', type: 'bit' },
-        { portId: 'ESM_1_TASK_4', text: 'ESM_1_TASK_4', type: 'bit' },
-        { portId: 'ESM_1_TASK_5', text: 'ESM_1_TASK_5', type: 'bit' },
-        { portId: 'ESM_1_TASK_6', text: 'ESM_1_TASK_6', type: 'bit' },
-        { portId: 'ESM_1_TASK_7', text: 'ESM_1_TASK_7', type: 'bit' },
-        { portId: 'ESM_1_TASK_8', text: 'ESM_1_TASK_8', type: 'bit' },
-        { portId: 'ESM_1_TASK_9', text: 'ESM_1_TASK_9', type: 'bit' },
-        { portId: 'ESM_1_TASK_10', text: 'ESM_1_TASK_10', type: 'bit' },
-        { portId: 'ESM_1_TASK_11', text: 'ESM_1_TASK_11', type: 'bit' },
-        { portId: 'ESM_1_TASK_12', text: 'ESM_1_TASK_12', type: 'bit' },
-        { portId: 'ESM_1_TASK_13', text: 'ESM_1_TASK_13', type: 'bit' },
-        { portId: 'ESM_1_TASK_14', text: 'ESM_1_TASK_14', type: 'bit' },
-        { portId: 'ESM_1_TASK_15', text: 'ESM_1_TASK_15', type: 'bit' },
-        { portId: 'ESM_1_TASK_16', text: 'ESM_1_TASK_16', type: 'bit' },
-        { portId: 'ESM_2_TASKS_USED', text: 'ESM_2_TASKS_USED', type: 'uint16' },
-        { portId: 'ESM_2_TASK_1', text: 'ESM_2_TASK_1', type: 'bit' },
-        { portId: 'ESM_2_TASK_2', text: 'ESM_2_TASK_2', type: 'bit' },
-        { portId: 'ESM_2_TASK_3', text: 'ESM_2_TASK_3', type: 'bit' },
-        { portId: 'ESM_2_TASK_4', text: 'ESM_2_TASK_4', type: 'bit' },
-        { portId: 'ESM_2_TASK_5', text: 'ESM_2_TASK_5', type: 'bit' },
-        { portId: 'ESM_2_TASK_6', text: 'ESM_2_TASK_6', type: 'bit' },
-        { portId: 'ESM_2_TASK_7', text: 'ESM_2_TASK_7', type: 'bit' },
-        { portId: 'ESM_2_TASK_8', text: 'ESM_2_TASK_8', type: 'bit' },
-        { portId: 'ESM_2_TASK_9', text: 'ESM_2_TASK_9', type: 'bit' },
-        { portId: 'ESM_2_TASK_10', text: 'ESM_2_TASK_10', type: 'bit' },
-        { portId: 'ESM_2_TASK_11', text: 'ESM_2_TASK_11', type: 'bit' },
-        { portId: 'ESM_2_TASK_12', text: 'ESM_2_TASK_12', type: 'bit' },
-        { portId: 'ESM_2_TASK_13', text: 'ESM_2_TASK_13', type: 'bit' },
-        { portId: 'ESM_2_TASK_14', text: 'ESM_2_TASK_14', type: 'bit' },
-        { portId: 'ESM_2_TASK_15', text: 'ESM_2_TASK_15', type: 'bit' },
-        { portId: 'ESM_2_TASK_16', text: 'ESM_2_TASK_16', type: 'bit' }
+        {
+          portId: 'ESM_COUNT',
+          text: 'ESM_COUNT',
+          type: 'uint16'
+        },
+        {
+          portId: 'ESM_1_TASKS_USED',
+          text: 'ESM_1_TASKS_USED',
+          type: 'uint16'
+        },
+        {
+          portId: 'ESM_1_TASK_1',
+          text: 'ESM_1_TASK_1',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_2',
+          text: 'ESM_1_TASK_2',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_3',
+          text: 'ESM_1_TASK_3',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_4',
+          text: 'ESM_1_TASK_4',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_5',
+          text: 'ESM_1_TASK_5',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_6',
+          text: 'ESM_1_TASK_6',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_7',
+          text: 'ESM_1_TASK_7',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_8',
+          text: 'ESM_1_TASK_8',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_9',
+          text: 'ESM_1_TASK_9',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_10',
+          text: 'ESM_1_TASK_10',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_11',
+          text: 'ESM_1_TASK_11',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_12',
+          text: 'ESM_1_TASK_12',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_13',
+          text: 'ESM_1_TASK_13',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_14',
+          text: 'ESM_1_TASK_14',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_15',
+          text: 'ESM_1_TASK_15',
+          type: 'bit' },
+        {
+          portId: 'ESM_1_TASK_16',
+          text: 'ESM_1_TASK_16',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASKS_USED',
+          text: 'ESM_2_TASKS_USED',
+          type: 'uint16' },
+        {
+          portId: 'ESM_2_TASK_1',
+          text: 'ESM_2_TASK_1',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_2',
+          text: 'ESM_2_TASK_2',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_3',
+          text: 'ESM_2_TASK_3',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_4',
+          text: 'ESM_2_TASK_4',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_5',
+          text: 'ESM_2_TASK_5',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_6',
+          text: 'ESM_2_TASK_6',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_7',
+          text: 'ESM_2_TASK_7',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_8',
+          text: 'ESM_2_TASK_8',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_9',
+          text: 'ESM_2_TASK_9',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_10',
+          text: 'ESM_2_TASK_10',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_11',
+          text: 'ESM_2_TASK_11',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_12',
+          text: 'ESM_2_TASK_12',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_13',
+          text: 'ESM_2_TASK_13',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_14',
+          text: 'ESM_2_TASK_14',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_15',
+          text: 'ESM_2_TASK_15',
+          type: 'bit' },
+        {
+          portId: 'ESM_2_TASK_16',
+          text: 'ESM_2_TASK_16',
+          type: 'bit' }
       ]
     },
     {
       key: 'Arp.Plc.Eclr/',
       name: 'Eclr',
       leftArray: [
-        { portId: 'AXIO_DIAG_STATUS_REG_HI', text: 'AXIO_DIAG_STATUS_REG_HI', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_LOW', text: 'AXIO_DIAG_STATUS_REG_LOW', type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_REG_HI', text: 'AXIO_DIAG_PARAM_REG_HI', type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_REG_LOW', text: 'AXIO_DIAG_PARAM_REG_LOW', type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_2_REG_HI', text: 'AXIO_DIAG_PARAM_2_REG_HI', type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_2_REG_LOW', text: 'AXIO_DIAG_PARAM_2_REG_LOW', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_PF', text: 'AXIO_DIAG_STATUS_REG_PF', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_BUS', text: 'AXIO_DIAG_STATUS_REG_BUS', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_RUN', text: 'AXIO_DIAG_STATUS_REG_RUN', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_ACT', text: 'AXIO_DIAG_STATUS_REG_ACT', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_RDY', text: 'AXIO_DIAG_STATUS_REG_RDY', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_SYSFAIL', text: 'AXIO_DIAG_STATUS_REG_SYSFAIL', type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_PW', text: 'AXIO_DIAG_STATUS_REG_PW', type: 'uint16' },
+        {
+          portId: 'AXIO_DIAG_STATUS_REG_HI',
+          text: 'AXIO_DIAG_STATUS_REG_HI',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_STATUS_REG_LOW',
+          text: 'AXIO_DIAG_STATUS_REG_LOW',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_PARAM_REG_HI',
+          text: 'AXIO_DIAG_PARAM_REG_HI',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_PARAM_REG_LOW',
+          text: 'AXIO_DIAG_PARAM_REG_LOW',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_PARAM_2_REG_HI',
+          text: 'AXIO_DIAG_PARAM_2_REG_HI',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_PARAM_2_REG_LOW',
+          text: 'AXIO_DIAG_PARAM_2_REG_LOW',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_STATUS_REG_PF',
+          text: 'AXIO_DIAG_STATUS_REG_PF',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_STATUS_REG_BUS',
+          text: 'AXIO_DIAG_STATUS_REG_BUS',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_STATUS_REG_RUN',
+          text: 'AXIO_DIAG_STATUS_REG_RUN',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_STATUS_REG_ACT',
+          text: 'AXIO_DIAG_STATUS_REG_ACT',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_STATUS_REG_RDY',
+          text: 'AXIO_DIAG_STATUS_REG_RDY',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_STATUS_REG_SYSFAIL',
+          text: 'AXIO_DIAG_STATUS_REG_SYSFAIL',
+          type: 'uint16'
+        },
+        {
+          portId: 'AXIO_DIAG_STATUS_REG_PW',
+          text: 'AXIO_DIAG_STATUS_REG_PW',
+          type: 'uint16'
+        },
 
-        { portId: 'PNIO_SYSTEM_BF', text: 'PNIO_SYSTEM_BF', type: 'bit' },
-        { portId: 'PNIO_SYSTEM_SF', text: 'PNIO_SYSTEM_SF', type: 'bit' },
-        { portId: 'PNIO_MAINTENANCE_DEMANDED', text: 'PNIO_MAINTENANCE_DEMANDED', type: 'bit' },
-        { portId: 'PNIO_MAINTENANCE_REQUIRED', text: 'PNIO_MAINTENANCE_REQUIRED', type: 'bit' },
-        { portId: 'PNIO_CONFIG_STATUS', text: 'PNIO_CONFIG_STATUS', type: 'bit' },
-        { portId: 'PNIO_CONFIG_STATUS_ACTIVE', text: 'PNIO_CONFIG_STATUS_ACTIVE', type: 'bit' },
-        { portId: 'PNIO_CONFIG_STATUS_READY', text: 'PNIO_CONFIG_STATUS_READY', type: 'bit' },
-        { portId: 'PNIO_CONFIG_STATUS_CFG_FAULT', text: 'PNIO_CONFIG_STATUS_CFG_FAULT', type: 'bit' },
+        {
+          portId: 'PNIO_SYSTEM_BF',
+          text: 'PNIO_SYSTEM_BF',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_SYSTEM_SF',
+          text: 'PNIO_SYSTEM_SF',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_MAINTENANCE_DEMANDED',
+          text: 'PNIO_MAINTENANCE_DEMANDED',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_MAINTENANCE_REQUIRED',
+          text: 'PNIO_MAINTENANCE_REQUIRED',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_CONFIG_STATUS',
+          text: 'PNIO_CONFIG_STATUS',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_CONFIG_STATUS_ACTIVE',
+          text: 'PNIO_CONFIG_STATUS_ACTIVE',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_CONFIG_STATUS_READY',
+          text: 'PNIO_CONFIG_STATUS_READY',
+          type: 'bit'
+        },
+        {
+          portId: 'PNIO_CONFIG_STATUS_CFG_FAULT',
+          text: 'PNIO_CONFIG_STATUS_CFG_FAULT',
+          type: 'bit'
+        },
 
-        { portId: 'PND_S1_PLC_RUN', text: 'PND_S1_PLC_RUN', type: 'bit' },
-        { portId: 'PND_S1_VALID_DATA_CYCLE', text: 'PND_S1_VALID_DATA_CYCLE', type: 'bit' },
-        { portId: 'PND_S1_OUTPUT_STATUS_GOOD', text: 'PND_S1_OUTPUT_STATUS_GOOD', type: 'bit' },
-        { portId: 'PND_S1_INPUT_STATUS_GOOD', text: 'PND_S1_INPUT_STATUS_GOOD', type: 'bit' },
-        { portId: 'PND_S1_DATA_LENGTH', text: 'PND_S1_DATA_LENGTH', type: 'uint16' },
-        { portId: 'PND_S1_INPUTS', text: 'PND_S1_INPUTS', type: 'uint16' },
+        {
+          portId: 'PND_S1_PLC_RUN',
+          text: 'PND_S1_PLC_RUN',
+          type: 'bit'
+        },
+        {
+          portId: 'PND_S1_VALID_DATA_CYCLE',
+          text: 'PND_S1_VALID_DATA_CYCLE',
+          type: 'bit'
+        },
+        {
+          portId: 'PND_S1_OUTPUT_STATUS_GOOD',
+          text: 'PND_S1_OUTPUT_STATUS_GOOD',
+          type: 'bit'
+        },
+        {
+          portId: 'PND_S1_INPUT_STATUS_GOOD',
+          text: 'PND_S1_INPUT_STATUS_GOOD',
+          type: 'bit'
+        },
+        {
+          portId: 'PND_S1_DATA_LENGTH',
+          text: 'PND_S1_DATA_LENGTH',
+          type: 'uint16'
+        },
+        {
+          portId: 'PND_S1_INPUTS',
+          text: 'PND_S1_INPUTS',
+          type: 'uint16'
+        },
 
-        { portId: 'ESM_COUNT', text: 'ESM_COUNT', type: 'uint16' },
-        { portId: 'ESM_1_TASKS_USED', text: 'ESM_1_TASKS_USED', type: 'uint16' },
-        { portId: 'ESM_1_TASK_1', text: 'ESM_1_TASK_1', type: 'bit' },
-        { portId: 'ESM_1_TASK_2', text: 'ESM_1_TASK_2', type: 'bit' },
-        { portId: 'ESM_1_TASK_3', text: 'ESM_1_TASK_3', type: 'bit' },
-        { portId: 'ESM_1_TASK_4', text: 'ESM_1_TASK_4', type: 'bit' },
-        { portId: 'ESM_1_TASK_5', text: 'ESM_1_TASK_5', type: 'bit' },
-        { portId: 'ESM_1_TASK_6', text: 'ESM_1_TASK_6', type: 'bit' },
-        { portId: 'ESM_1_TASK_7', text: 'ESM_1_TASK_7', type: 'bit' },
-        { portId: 'ESM_1_TASK_8', text: 'ESM_1_TASK_8', type: 'bit' },
-        { portId: 'ESM_1_TASK_9', text: 'ESM_1_TASK_9', type: 'bit' },
-        { portId: 'ESM_1_TASK_10', text: 'ESM_1_TASK_10', type: 'bit' },
-        { portId: 'ESM_1_TASK_11', text: 'ESM_1_TASK_11', type: 'bit' },
-        { portId: 'ESM_1_TASK_12', text: 'ESM_1_TASK_12', type: 'bit' },
-        { portId: 'ESM_1_TASK_13', text: 'ESM_1_TASK_13', type: 'bit' },
-        { portId: 'ESM_1_TASK_14', text: 'ESM_1_TASK_14', type: 'bit' },
-        { portId: 'ESM_1_TASK_15', text: 'ESM_1_TASK_15', type: 'bit' },
-        { portId: 'ESM_1_TASK_16', text: 'ESM_1_TASK_16', type: 'bit' },
-        { portId: 'ESM_2_TASKS_USED', text: 'ESM_2_TASKS_USED', type: 'uint16' },
-        { portId: 'ESM_2_TASK_1', text: 'ESM_2_TASK_1', type: 'bit' },
-        { portId: 'ESM_2_TASK_2', text: 'ESM_2_TASK_2', type: 'bit' },
-        { portId: 'ESM_2_TASK_3', text: 'ESM_2_TASK_3', type: 'bit' },
-        { portId: 'ESM_2_TASK_4', text: 'ESM_2_TASK_4', type: 'bit' },
-        { portId: 'ESM_2_TASK_5', text: 'ESM_2_TASK_5', type: 'bit' },
-        { portId: 'ESM_2_TASK_6', text: 'ESM_2_TASK_6', type: 'bit' },
-        { portId: 'ESM_2_TASK_7', text: 'ESM_2_TASK_7', type: 'bit' },
-        { portId: 'ESM_2_TASK_8', text: 'ESM_2_TASK_8', type: 'bit' },
-        { portId: 'ESM_2_TASK_9', text: 'ESM_2_TASK_9', type: 'bit' },
-        { portId: 'ESM_2_TASK_10', text: 'ESM_2_TASK_10', type: 'bit' },
-        { portId: 'ESM_2_TASK_11', text: 'ESM_2_TASK_11', type: 'bit' },
-        { portId: 'ESM_2_TASK_12', text: 'ESM_2_TASK_12', type: 'bit' },
-        { portId: 'ESM_2_TASK_13', text: 'ESM_2_TASK_13', type: 'bit' },
-        { portId: 'ESM_2_TASK_14', text: 'ESM_2_TASK_14', type: 'bit' },
-        { portId: 'ESM_2_TASK_15', text: 'ESM_2_TASK_15', type: 'bit' },
-        { portId: 'ESM_2_TASK_16', text: 'ESM_2_TASK_16', type: 'bit' }
+        {
+          portId: 'ESM_COUNT',
+          text: 'ESM_COUNT',
+          type: 'uint16'
+        },
+        {
+          portId: 'ESM_1_TASKS_USED',
+          text: 'ESM_1_TASKS_USED',
+          type: 'uint16'
+        },
+        {
+          portId: 'ESM_1_TASK_1',
+          text: 'ESM_1_TASK_1',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_2',
+          text: 'ESM_1_TASK_2',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_3',
+          text: 'ESM_1_TASK_3',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_4',
+          text: 'ESM_1_TASK_4',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_5',
+          text: 'ESM_1_TASK_5',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_6',
+          text: 'ESM_1_TASK_6',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_7',
+          text: 'ESM_1_TASK_7',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_8',
+          text: 'ESM_1_TASK_8',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_9',
+          text: 'ESM_1_TASK_9',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_10',
+          text: 'ESM_1_TASK_10',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_11',
+          text: 'ESM_1_TASK_11',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_12',
+          text: 'ESM_1_TASK_12',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_13',
+          text: 'ESM_1_TASK_13',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_14',
+          text: 'ESM_1_TASK_14',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_15',
+          text: 'ESM_1_TASK_15',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_1_TASK_16',
+          text: 'ESM_1_TASK_16',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASKS_USED',
+          text: 'ESM_2_TASKS_USED',
+          type: 'uint16'
+        },
+        {
+          portId: 'ESM_2_TASK_1',
+          text: 'ESM_2_TASK_1',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_2',
+          text: 'ESM_2_TASK_2',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_3',
+          text: 'ESM_2_TASK_3',
+          type: 'bit'
+         },
+        {
+          portId: 'ESM_2_TASK_4',
+          text: 'ESM_2_TASK_4',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_5',
+          text: 'ESM_2_TASK_5',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_6',
+          text: 'ESM_2_TASK_6',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_7',
+          text: 'ESM_2_TASK_7',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_8',
+          text: 'ESM_2_TASK_8',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_9',
+          text: 'ESM_2_TASK_9',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_10',
+          text: 'ESM_2_TASK_10',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_11',
+          text: 'ESM_2_TASK_11',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_12',
+          text: 'ESM_2_TASK_12',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_13',
+          text: 'ESM_2_TASK_13',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_14',
+          text: 'ESM_2_TASK_14',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_15',
+          text: 'ESM_2_TASK_15',
+          type: 'bit'
+        },
+        {
+          portId: 'ESM_2_TASK_16',
+          text: 'ESM_2_TASK_16',
+          type: 'bit'
+        }
       ],
       rightArray: [
-        { portId: 'PNIO_FORCE_FAILSAFE', text: 'PNIO_FORCE_FAILSAFE', type: 'bit' },
-        { portId: 'PND_S1_OUTPUTS', text: 'PND_S1_OUTPUTS', type: 'uint16' }
+        {
+          portId: 'PNIO_FORCE_FAILSAFE',
+          text: 'PNIO_FORCE_FAILSAFE',
+          type: 'bit'
+        },
+        {
+          portId: 'PND_S1_OUTPUTS',
+          text: 'PND_S1_OUTPUTS',
+          type: 'uint16'
+        }
       ]
     },
   ];
@@ -502,6 +956,108 @@ exports.getPrograms = function (metaConfigFilename) {
 };
 
 /**
+ * Gets a PLCnext Technology ESM configuration.
+ * See separate documentation for json schemas. 
+ * @param {string} esmConfigFileName - the name of an ESM configuration file.
+ * @param {string} acfConfigFileName - the name of an ACF configuration file.
+ * @returns {Object[]} a list of ESM configuration elements.
+ */
+exports.getEsmConfig = function (esmConfigFilename, acfConfigFilename) {
+
+  var esmConfig = [
+    { key: 'PLCnext', name: 'PLCnext'},
+    { key: 'ESM1', name: 'ESM1', parent: 'PLCnext'},
+    { key: 'ESM2', name: 'ESM2', parent: 'PLCnext'}
+  ];
+
+  // Get the list of Libraries, Components and Component Instances.
+  var componentTypes = {};
+
+  // Read acf configuration data.
+  var acfConfigData = fs.readFileSync(acfConfigFilename);
+
+  // Parse the XML acf configuration data.
+  var acfConfigParser = new xml2js.Parser();
+  acfConfigParser.parseString(acfConfigData, function (err, result) {
+
+    // Iterate through the list of Components.
+    result.AcfConfigurationDocument.Components.forEach(components => {
+      components.Component.forEach(component => {
+        componentTypes[component.$.name] = component.$.library +
+          '.' + component.$.type;
+      });
+    });
+  });
+
+  //TODO: Include checks on the existence of all files.
+  //TODO: Include information on the Task that each instance is associated with.
+
+  // Read esm data.
+  var esmConfigData = fs.readFileSync(esmConfigFilename);
+
+  // Parse the XML esm configuration data.
+  var esmConfigParser = new xml2js.Parser();
+  esmConfigParser.parseString(esmConfigData, function (err, result) {
+
+    // Iterate through the list of tasks.
+    // TODO: Check other tasks, not just Cyclic tasks.
+    result.EsmConfigurationDocument.Tasks.forEach(tasks => {
+      tasks.CyclicTask.forEach(cyclicTask => {
+        // TODO: Add the other Task attributes.
+        var newTask = {
+          key: cyclicTask.$.name,
+          name: cyclicTask.$.name,
+          parent: '' };
+        esmConfig.push(newTask);
+      });
+    });
+
+    // Iterate through the list of ESM/task relations.
+    result.EsmConfigurationDocument.EsmTaskRelations.forEach(relations => {
+      relations.EsmTaskRelation.forEach(relation => {
+        // Get the Task object from the esmConfig.
+        var esmTask = esmConfig.filter(
+          task => task.key == relation.$.taskName
+        )
+        // Set the parent property of the task.
+        // TODO: Check that there is one and only one element in the array.
+        esmTask[0].parent = relation.$.esmName;
+      });
+    });
+
+    // Iterate through the list of Programs to determine all program instances.
+    result.EsmConfigurationDocument.Programs.forEach(programs => {
+      programs.Program.forEach(program => {
+        // TODO: Check if the component is in the ACF configuration
+        // (e.g. Eclr). If not, ignore it.
+        var newProgram = {
+          key: program.$.componentName + '/' + program.$.name,
+          name: program.$.name,
+          parent: '' };
+        esmConfig.push(newProgram);
+      });
+    });
+
+    // Iterate through the list of task/program relations.
+    result.EsmConfigurationDocument.TaskProgramRelations.forEach(relations => {
+      relations.TaskProgramRelation.forEach(relation => {
+        // Get the Program object from the esmConfig.
+        var taskProgram = esmConfig.filter(
+          program => program.key == relation.$.programName
+        )
+        // Set the parent property of the program.
+        // TODO: Check that there is one and only one element in the array.
+        taskProgram[0].parent = relation.$.taskName;
+      });
+    });
+  });
+
+  console.log(esmConfig);
+
+  return esmConfig;
+};
+
+/**
  * Gets a list of program instances available in a
  * PLCnext Technology configuration.
  * See separate documentation for json schemas. 
@@ -524,7 +1080,8 @@ exports.getProgramInstances = function (acfConfigFilename, esmConfigFilename) {
     // Iterate through the list of Components.
     result.AcfConfigurationDocument.Components.forEach(components => {
       components.Component.forEach(component => {
-        componentTypes[component.$.name] = component.$.library + '.' + component.$.type;
+        componentTypes[component.$.name] = component.$.library +
+          '.' + component.$.type;
       });
     });
   });
@@ -544,7 +1101,8 @@ exports.getProgramInstances = function (acfConfigFilename, esmConfigFilename) {
     // Iterate through the list of Programs to determine all program instances.
     result.EsmConfigurationDocument.Programs.forEach(programs => {
       programs.Program.forEach(program => {
-        // TODO: Check if the component is in the ACF configuration (e.g. Eclr). If not, ignore it.
+        // TODO: Check if the component is in the ACF configuration
+        // (e.g. Eclr). If not, ignore it.
         var newNode = { category: componentTypes[program.$.componentName] + '.' + program.$.programType, key: program.$.componentName + '/' + program.$.name, name: program.$.name };
         programInstances.push(newNode);
       });
@@ -558,15 +1116,15 @@ exports.getProgramInstances = function (acfConfigFilename, esmConfigFilename) {
  * Gets a list of connections between objects in a
  * PLCnext Technology configuration.
  * See separate documentation for json schemas. 
- * @param {string} gdsFileName - the name of a GDS configuration file.
+ * @param {string} gdsConfigFileName - the name of a GDS configuration file.
  * @returns {Object[]} a list of defined connections.
  */
-exports.getConnections = function (gdsFileName) {
+exports.getConnections = function (gdsConfigFileName) {
 
   var connections = [];
 
   // Read gds data.
-  var gdsConfigData = fs.readFileSync(gdsFileName);
+  var gdsConfigData = fs.readFileSync(gdsConfigFileName);
 
   // Parse the XML gds configuration data.
   var gdsConfigParser = new xml2js.Parser();
@@ -593,9 +1151,9 @@ exports.getConnections = function (gdsFileName) {
  * PLCnext Technology configuration.
  * See separate documentation for json schemas. 
  * @param {string} linkData - a list of object connections.
- * @param {string} gdsFileName - the name of a GDS configuration file.
+ * @param {string} gdsConfigFileName - the name of a GDS configuration file.
  */
-exports.setConnections = function (linkData, gdsFileName) {
+exports.setConnections = function (linkData, gdsConfigFileName) {
 
   // Declare the target json object in the format that the Builder
   // will convert to valid GDS XML.
@@ -608,5 +1166,5 @@ exports.setConnections = function (linkData, gdsFileName) {
 
   // Create the XML Builder and write the XML to file.
   var builder = new xml2js.Builder({ rootName: 'GdsConfigurationDocument', headless: true });
-  fs.writeFileSync(gdsFileName, builder.buildObject(json));
+  fs.writeFileSync(gdsConfigFileName, builder.buildObject(json));
 };

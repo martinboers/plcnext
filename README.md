@@ -48,11 +48,11 @@ Returns an array of library/component/program definitions contained in the metad
 **getProgramInstances (acfConfigFilename, esmConfigFilename)**  
 Returns an array of component/program instances contained in the ACF and ESM configuration files.
 
-**getConnections (gdsFileName)**  
+**getConnections (gdsConfigFileName)**  
 Returns an array of connections contained in the GDS configuration file.
 Connections may be between ports on program instances, I/O modules or global objects.
 
-**setConnections (linkData, gdsFileName)**  
+**setConnections (linkData, gdsConfigFileName)**  
 Writes the connections defined in linkData to the GDS configuration file.
 
 ## Tests
@@ -62,10 +62,6 @@ npm test
 ## Contributors
 
 Please be kind.
-
-## History
-
-Version 0.1.0 (12-02-2018) - Initial commit.
 
 ## License
 
