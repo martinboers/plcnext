@@ -1,5 +1,5 @@
 ## plcnext
-A node package for use with PLCnext Technology controllers from Phoenix Contact.
+A node package for use with PLCnext Technology™ controllers from Phoenix Contact.
 
 ## Code Example
 
