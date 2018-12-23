@@ -1,0 +1,551 @@
+[
+  {
+    "key": "Arp.Io.AxlC/",
+    "name": "AxlC",
+    "leftArray": [],
+    "rightArray": [
+      { "portId": "AXIO_DIAG_STATUS_REG_HI",
+        "text": "AXIO_DIAG_STATUS_REG_HI",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_STATUS_REG_LOW",
+        "text": "AXIO_DIAG_STATUS_REG_LOW",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_PARAM_REG_HI",
+        "text": "AXIO_DIAG_PARAM_REG_HI",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_PARAM_REG_LOW",
+        "text": "AXIO_DIAG_PARAM_REG_LOW",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_PARAM_2_REG_HI",
+        "text": "AXIO_DIAG_PARAM_2_REG_HI",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_PARAM_2_REG_LOW",
+        "text": "AXIO_DIAG_PARAM_2_REG_LOW",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_STATUS_REG_PF",
+        "text": "AXIO_DIAG_STATUS_REG_PF",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_STATUS_REG_BUS",
+        "text": "AXIO_DIAG_STATUS_REG_BUS",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_STATUS_REG_RUN",
+        "text": "AXIO_DIAG_STATUS_REG_RUN",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_STATUS_REG_ACT",
+        "text": "AXIO_DIAG_STATUS_REG_ACT",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_STATUS_REG_RDY",
+        "text": "AXIO_DIAG_STATUS_REG_RDY",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_STATUS_REG_SYSFAIL",
+        "text": "AXIO_DIAG_STATUS_REG_SYSFAIL",
+        "type": "uint16" },
+      { "portId": "AXIO_DIAG_STATUS_REG_PW",
+        "text": "AXIO_DIAG_STATUS_REG_PW",
+        "type": "uint16" }
+    ]
+  },
+  {
+    "key": "Arp.Io.IbM/",
+    "name": "IbM",
+    "leftArray": [],
+    "rightArray": [
+      {
+        "portId": "IB_DIAG_STATUS_REG_HI",
+        "text": "IB_DIAG_STATUS_REG_HI",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_LOW",
+        "text": "IB_DIAG_STATUS_REG_LOW",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_SYSFAIL",
+        "text": "IB_DIAG_STATUS_REG_SYSFAIL",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_WARN",
+        "text": "IB_DIAG_STATUS_REG_WARN",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_QUAL",
+        "text": "IB_DIAG_STATUS_REG_QUAL",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_USER",
+        "text": "IB_DIAG_STATUS_REG_USER",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_PF",
+        "text": "IB_DIAG_STATUS_REG_PF",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_BUS",
+        "text": "IB_DIAG_STATUS_REG_BUS",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_CTRL",
+        "text": "IB_DIAG_STATUS_REG_CTRL",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_DTC",
+        "text": "IB_DIAG_STATUS_REG_DTC",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_RUN",
+        "text": "IB_DIAG_STATUS_REG_RUN",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_ACT",
+        "text": "IB_DIAG_STATUS_REG_ACT",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_RDY",
+        "text": "IB_DIAG_STATUS_REG_RDY",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_PARAM_REG_HI",
+        "text": "IB_DIAG_PARAM_REG_HI",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_PARAM_REG_LOW",
+        "text": "IB_DIAG_PARAM_REG_LOW",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_PARAM_2_REG_HI",
+        "text": "IB_DIAG_PARAM_2_REG_HI",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_PARAM_2_REG_LOW",
+        "text": "IB_DIAG_PARAM_2_REG_LOW",
+        "type": "uint16"
+      }
+    ]
+  },
+  {
+    "key": "Arp.Io.PnC/",
+    "name": "PnC",
+    "leftArray": [
+      {
+        "portId": "PNIO_FORCE_FAILSAFE",
+        "text": "PNIO_FORCE_FAILSAFE",
+        "type": "bit"
+      }
+    ],
+    "rightArray": [
+      {
+        "portId": "PNIO_SYSTEM_BF",
+        "text": "PNIO_SYSTEM_BF",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_SYSTEM_SF",
+        "text": "PNIO_SYSTEM_SF",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_MAINTENANCE_DEMANDED",
+        "text": "PNIO_MAINTENANCE_DEMANDED",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_MAINTENANCE_REQUIRED",
+        "text": "PNIO_MAINTENANCE_REQUIRED",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_CONFIG_STATUS",
+        "text": "PNIO_CONFIG_STATUS",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_CONFIG_STATUS_ACTIVE",
+        "text": "PNIO_CONFIG_STATUS_ACTIVE",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_CONFIG_STATUS_READY",
+        "text": "PNIO_CONFIG_STATUS_READY",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_CONFIG_STATUS_CFG_FAULT",
+        "text": "PNIO_CONFIG_STATUS_CFG_FAULT",
+        "type": "bit"
+      }
+    ]
+  },
+  {
+    "key": "Arp.Io.PnD/",
+    "name": "PnD",
+    "leftArray": [
+      {
+        "portId": "PND_S1_OUTPUTS",
+        "text": "PND_S1_OUTPUTS",
+        "type": "uint16"
+      }
+    ],
+    "rightArray": [
+      {
+        "portId": "PND_S1_PLC_RUN",
+        "text": "PND_S1_PLC_RUN",
+        "type": "bit"
+      },
+      {
+        "portId": "PND_S1_VALID_DATA_CYCLE",
+        "text": "PND_S1_VALID_DATA_CYCLE",
+        "type": "bit"
+      },
+      {
+        "portId": "PND_S1_OUTPUT_STATUS_GOOD",
+        "text": "PND_S1_OUTPUT_STATUS_GOOD",
+        "type": "bit"
+      },
+      {
+        "portId": "PND_S1_INPUT_STATUS_GOOD",
+        "text": "PND_S1_INPUT_STATUS_GOOD",
+        "type": "bit"
+      },
+      {
+        "portId": "PND_S1_DATA_LENGTH",
+        "text": "PND_S1_DATA_LENGTH",
+        "type": "uint16"
+      },
+      {
+        "portId": "PND_S1_INPUTS",
+        "text": "PND_S1_INPUTS",
+        "type": "uint16"
+      }
+    ]
+  },
+  {
+    "key": "Arp.Plc.Esm/",
+    "name": "Esm",
+    "leftArray": [],
+    "rightArray": [
+      {
+        "portId": "ESM_DATA",
+        "text": "ESM_DATA",
+        "type": "uint16"
+      }
+    ]
+  },
+  {
+    "key": "Arp.Device.Interface/",
+    "name": "Interface",
+    "leftArray": [],
+    "rightArray": [
+      {
+        "portId": "RTC",
+        "text": "RTC",
+        "type": "uint16"
+      },
+      {
+        "portId": "DEVICE_STATE",
+        "text": "DEVICE_STATE",
+        "type": "uint16"
+      }
+    ]
+  },
+  {
+    "key": "Arp.Services.Ehmi/",
+    "name": "Ehmi",
+    "leftArray": [
+      {
+        "portId": "HMI_CONTROL",
+        "text": "HMI_CONTROL",
+        "type": "uint16"
+      }
+    ],
+    "rightArray": [
+      {
+        "portId": "HMI_STATUS",
+        "text": "HMI_STATUS",
+        "type": "uint16"
+      }
+    ]
+  },
+  {
+    "key": "Arp.Plc.Eclr/",
+    "name": "Eclr",
+    "leftArray": [
+      {
+        "portId": "AXIO_DIAG_STATUS_REG_HI",
+        "text": "AXIO_DIAG_STATUS_REG_HI",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_STATUS_REG_LOW",
+        "text": "AXIO_DIAG_STATUS_REG_LOW",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_PARAM_REG_HI",
+        "text": "AXIO_DIAG_PARAM_REG_HI",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_PARAM_REG_LOW",
+        "text": "AXIO_DIAG_PARAM_REG_LOW",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_PARAM_2_REG_HI",
+        "text": "AXIO_DIAG_PARAM_2_REG_HI",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_PARAM_2_REG_LOW",
+        "text": "AXIO_DIAG_PARAM_2_REG_LOW",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_STATUS_REG_PF",
+        "text": "AXIO_DIAG_STATUS_REG_PF",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_STATUS_REG_BUS",
+        "text": "AXIO_DIAG_STATUS_REG_BUS",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_STATUS_REG_RUN",
+        "text": "AXIO_DIAG_STATUS_REG_RUN",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_STATUS_REG_ACT",
+        "text": "AXIO_DIAG_STATUS_REG_ACT",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_STATUS_REG_RDY",
+        "text": "AXIO_DIAG_STATUS_REG_RDY",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_STATUS_REG_SYSFAIL",
+        "text": "AXIO_DIAG_STATUS_REG_SYSFAIL",
+        "type": "uint16"
+      },
+      {
+        "portId": "AXIO_DIAG_STATUS_REG_PW",
+        "text": "AXIO_DIAG_STATUS_REG_PW",
+        "type": "uint16"
+      },
+
+      {
+        "portId": "IB_DIAG_STATUS_REG_HI",
+        "text": "IB_DIAG_STATUS_REG_HI",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_LOW",
+        "text": "IB_DIAG_STATUS_REG_LOW",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_SYSFAIL",
+        "text": "IB_DIAG_STATUS_REG_SYSFAIL",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_WARN",
+        "text": "IB_DIAG_STATUS_REG_WARN",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_QUAL",
+        "text": "IB_DIAG_STATUS_REG_QUAL",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_USER",
+        "text": "IB_DIAG_STATUS_REG_USER",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_PF",
+        "text": "IB_DIAG_STATUS_REG_PF",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_BUS",
+        "text": "IB_DIAG_STATUS_REG_BUS",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_CTRL",
+        "text": "IB_DIAG_STATUS_REG_CTRL",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_DTC",
+        "text": "IB_DIAG_STATUS_REG_DTC",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_RUN",
+        "text": "IB_DIAG_STATUS_REG_RUN",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_ACT",
+        "text": "IB_DIAG_STATUS_REG_ACT",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_STATUS_REG_RDY",
+        "text": "IB_DIAG_STATUS_REG_RDY",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_PARAM_REG_HI",
+        "text": "IB_DIAG_PARAM_REG_HI",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_PARAM_REG_LOW",
+        "text": "IB_DIAG_PARAM_REG_LOW",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_PARAM_2_REG_HI",
+        "text": "IB_DIAG_PARAM_2_REG_HI",
+        "type": "uint16"
+      },
+      {
+        "portId": "IB_DIAG_PARAM_2_REG_LOW",
+        "text": "IB_DIAG_PARAM_2_REG_LOW",
+        "type": "uint16"
+      },
+
+      {
+        "portId": "PNIO_SYSTEM_BF",
+        "text": "PNIO_SYSTEM_BF",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_SYSTEM_SF",
+        "text": "PNIO_SYSTEM_SF",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_MAINTENANCE_DEMANDED",
+        "text": "PNIO_MAINTENANCE_DEMANDED",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_MAINTENANCE_REQUIRED",
+        "text": "PNIO_MAINTENANCE_REQUIRED",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_CONFIG_STATUS",
+        "text": "PNIO_CONFIG_STATUS",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_CONFIG_STATUS_ACTIVE",
+        "text": "PNIO_CONFIG_STATUS_ACTIVE",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_CONFIG_STATUS_READY",
+        "text": "PNIO_CONFIG_STATUS_READY",
+        "type": "bit"
+      },
+      {
+        "portId": "PNIO_CONFIG_STATUS_CFG_FAULT",
+        "text": "PNIO_CONFIG_STATUS_CFG_FAULT",
+        "type": "bit"
+      },
+
+      {
+        "portId": "PND_S1_PLC_RUN",
+        "text": "PND_S1_PLC_RUN",
+        "type": "bit"
+      },
+      {
+        "portId": "PND_S1_VALID_DATA_CYCLE",
+        "text": "PND_S1_VALID_DATA_CYCLE",
+        "type": "bit"
+      },
+      {
+        "portId": "PND_S1_OUTPUT_STATUS_GOOD",
+        "text": "PND_S1_OUTPUT_STATUS_GOOD",
+        "type": "bit"
+      },
+      {
+        "portId": "PND_S1_INPUT_STATUS_GOOD",
+        "text": "PND_S1_INPUT_STATUS_GOOD",
+        "type": "bit"
+      },
+      {
+        "portId": "PND_S1_DATA_LENGTH",
+        "text": "PND_S1_DATA_LENGTH",
+        "type": "uint16"
+      },
+      {
+        "portId": "PND_S1_INPUTS",
+        "text": "PND_S1_INPUTS",
+        "type": "uint16"
+      },
+
+      {
+        "portId": "ESM_DATA",
+        "text": "ESM_DATA",
+        "type": "uint16"
+      },
+
+      {
+        "portId": "RTC",
+        "text": "RTC",
+        "type": "uint16"
+      },
+      {
+        "portId": "DEVICE_STATE",
+        "text": "DEVICE_STATE",
+        "type": "uint16"
+      },
+      {
+        "portId": "HMI_STATUS",
+        "text": "HMI_STATUS",
+        "type": "uint16"
+      }
+    ],
+    "rightArray": [
+      {
+        "portId": "PNIO_FORCE_FAILSAFE",
+        "text": "PNIO_FORCE_FAILSAFE",
+        "type": "bit"
+      },
+      {
+        "portId": "PND_S1_OUTPUTS",
+        "text": "PND_S1_OUTPUTS",
+        "type": "uint16"
+      },
+      {
+        "portId": "HMI_CONTROL",
+        "text": "HMI_CONTROL",
+        "type": "uint16"
+      }
+    ]
+  }
+]

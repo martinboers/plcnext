@@ -81,632 +81,7 @@ var getElements = function (elementList) {
  * @returns {Object[]} a list of global objects.
  */
 exports.getGlobalObjects = function () {
-  var globalObjects = [
-    {
-      key: 'Arp.Io.FbIo.AxlC/',
-      name: 'AxlC',
-      leftArray: [],
-      rightArray: [
-        { portId: 'AXIO_DIAG_STATUS_REG_HI',
-          text: 'AXIO_DIAG_STATUS_REG_HI',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_LOW',
-          text: 'AXIO_DIAG_STATUS_REG_LOW',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_REG_HI',
-          text: 'AXIO_DIAG_PARAM_REG_HI',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_REG_LOW',
-          text: 'AXIO_DIAG_PARAM_REG_LOW',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_2_REG_HI',
-          text: 'AXIO_DIAG_PARAM_2_REG_HI',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_PARAM_2_REG_LOW',
-          text: 'AXIO_DIAG_PARAM_2_REG_LOW',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_PF',
-          text: 'AXIO_DIAG_STATUS_REG_PF',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_BUS',
-          text: 'AXIO_DIAG_STATUS_REG_BUS',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_RUN',
-          text: 'AXIO_DIAG_STATUS_REG_RUN',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_ACT',
-          text: 'AXIO_DIAG_STATUS_REG_ACT',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_RDY',
-          text: 'AXIO_DIAG_STATUS_REG_RDY',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_SYSFAIL',
-          text: 'AXIO_DIAG_STATUS_REG_SYSFAIL',
-          type: 'uint16' },
-        { portId: 'AXIO_DIAG_STATUS_REG_PW',
-          text: 'AXIO_DIAG_STATUS_REG_PW',
-          type: 'uint16' }
-      ]
-    },
-    {
-      key: 'Arp.Io.FbIo.PnC/',
-      name: 'PnC',
-      leftArray: [
-        {
-          portId: 'PNIO_FORCE_FAILSAFE',
-          text: 'PNIO_FORCE_FAILSAFE',
-          type: 'bit'
-        }
-      ],
-      rightArray: [
-        {
-          portId: 'PNIO_SYSTEM_BF',
-          text: 'PNIO_SYSTEM_BF',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_SYSTEM_SF',
-          text: 'PNIO_SYSTEM_SF',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_MAINTENANCE_DEMANDED',
-          text: 'PNIO_MAINTENANCE_DEMANDED',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_MAINTENANCE_REQUIRED',
-          text: 'PNIO_MAINTENANCE_REQUIRED',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_CONFIG_STATUS',
-          text: 'PNIO_CONFIG_STATUS',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_CONFIG_STATUS_ACTIVE',
-          text: 'PNIO_CONFIG_STATUS_ACTIVE',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_CONFIG_STATUS_READY',
-          text: 'PNIO_CONFIG_STATUS_READY',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_CONFIG_STATUS_CFG_FAULT',
-          text: 'PNIO_CONFIG_STATUS_CFG_FAULT',
-          type: 'bit'
-        }
-      ]
-    },
-    {
-      key: 'Arp.Io.FbIo.PnD/',
-      name: 'PnD',
-      leftArray: [
-        {
-          portId: 'PND_S1_OUTPUTS',
-          text: 'PND_S1_OUTPUTS',
-          type: 'uint16'
-        }
-      ],
-      rightArray: [
-        {
-          portId: 'PND_S1_PLC_RUN',
-          text: 'PND_S1_PLC_RUN',
-          type: 'bit'
-        },
-        {
-          portId: 'PND_S1_VALID_DATA_CYCLE',
-          text: 'PND_S1_VALID_DATA_CYCLE',
-          type: 'bit'
-        },
-        {
-          portId: 'PND_S1_OUTPUT_STATUS_GOOD',
-          text: 'PND_S1_OUTPUT_STATUS_GOOD',
-          type: 'bit'
-        },
-        {
-          portId: 'PND_S1_INPUT_STATUS_GOOD',
-          text: 'PND_S1_INPUT_STATUS_GOOD',
-          type: 'bit'
-        },
-        {
-          portId: 'PND_S1_DATA_LENGTH',
-          text: 'PND_S1_DATA_LENGTH',
-          type: 'uint16'
-        },
-        {
-          portId: 'PND_S1_INPUTS',
-          text: 'PND_S1_INPUTS',
-          type: 'uint16'
-        }
-      ]
-    },
-    {
-      key: 'Arp.Plc.Esm/',
-      name: 'Esm',
-      leftArray: [],
-      rightArray: [
-        {
-          portId: 'ESM_COUNT',
-          text: 'ESM_COUNT',
-          type: 'uint16'
-        },
-        {
-          portId: 'ESM_1_TASKS_USED',
-          text: 'ESM_1_TASKS_USED',
-          type: 'uint16'
-        },
-        {
-          portId: 'ESM_1_TASK_1',
-          text: 'ESM_1_TASK_1',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_2',
-          text: 'ESM_1_TASK_2',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_3',
-          text: 'ESM_1_TASK_3',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_4',
-          text: 'ESM_1_TASK_4',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_5',
-          text: 'ESM_1_TASK_5',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_6',
-          text: 'ESM_1_TASK_6',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_7',
-          text: 'ESM_1_TASK_7',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_8',
-          text: 'ESM_1_TASK_8',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_9',
-          text: 'ESM_1_TASK_9',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_10',
-          text: 'ESM_1_TASK_10',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_11',
-          text: 'ESM_1_TASK_11',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_12',
-          text: 'ESM_1_TASK_12',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_13',
-          text: 'ESM_1_TASK_13',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_14',
-          text: 'ESM_1_TASK_14',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_15',
-          text: 'ESM_1_TASK_15',
-          type: 'bit' },
-        {
-          portId: 'ESM_1_TASK_16',
-          text: 'ESM_1_TASK_16',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASKS_USED',
-          text: 'ESM_2_TASKS_USED',
-          type: 'uint16' },
-        {
-          portId: 'ESM_2_TASK_1',
-          text: 'ESM_2_TASK_1',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_2',
-          text: 'ESM_2_TASK_2',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_3',
-          text: 'ESM_2_TASK_3',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_4',
-          text: 'ESM_2_TASK_4',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_5',
-          text: 'ESM_2_TASK_5',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_6',
-          text: 'ESM_2_TASK_6',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_7',
-          text: 'ESM_2_TASK_7',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_8',
-          text: 'ESM_2_TASK_8',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_9',
-          text: 'ESM_2_TASK_9',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_10',
-          text: 'ESM_2_TASK_10',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_11',
-          text: 'ESM_2_TASK_11',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_12',
-          text: 'ESM_2_TASK_12',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_13',
-          text: 'ESM_2_TASK_13',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_14',
-          text: 'ESM_2_TASK_14',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_15',
-          text: 'ESM_2_TASK_15',
-          type: 'bit' },
-        {
-          portId: 'ESM_2_TASK_16',
-          text: 'ESM_2_TASK_16',
-          type: 'bit' }
-      ]
-    },
-    {
-      key: 'Arp.Plc.Eclr/',
-      name: 'Eclr',
-      leftArray: [
-        {
-          portId: 'AXIO_DIAG_STATUS_REG_HI',
-          text: 'AXIO_DIAG_STATUS_REG_HI',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_STATUS_REG_LOW',
-          text: 'AXIO_DIAG_STATUS_REG_LOW',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_PARAM_REG_HI',
-          text: 'AXIO_DIAG_PARAM_REG_HI',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_PARAM_REG_LOW',
-          text: 'AXIO_DIAG_PARAM_REG_LOW',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_PARAM_2_REG_HI',
-          text: 'AXIO_DIAG_PARAM_2_REG_HI',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_PARAM_2_REG_LOW',
-          text: 'AXIO_DIAG_PARAM_2_REG_LOW',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_STATUS_REG_PF',
-          text: 'AXIO_DIAG_STATUS_REG_PF',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_STATUS_REG_BUS',
-          text: 'AXIO_DIAG_STATUS_REG_BUS',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_STATUS_REG_RUN',
-          text: 'AXIO_DIAG_STATUS_REG_RUN',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_STATUS_REG_ACT',
-          text: 'AXIO_DIAG_STATUS_REG_ACT',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_STATUS_REG_RDY',
-          text: 'AXIO_DIAG_STATUS_REG_RDY',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_STATUS_REG_SYSFAIL',
-          text: 'AXIO_DIAG_STATUS_REG_SYSFAIL',
-          type: 'uint16'
-        },
-        {
-          portId: 'AXIO_DIAG_STATUS_REG_PW',
-          text: 'AXIO_DIAG_STATUS_REG_PW',
-          type: 'uint16'
-        },
-
-        {
-          portId: 'PNIO_SYSTEM_BF',
-          text: 'PNIO_SYSTEM_BF',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_SYSTEM_SF',
-          text: 'PNIO_SYSTEM_SF',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_MAINTENANCE_DEMANDED',
-          text: 'PNIO_MAINTENANCE_DEMANDED',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_MAINTENANCE_REQUIRED',
-          text: 'PNIO_MAINTENANCE_REQUIRED',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_CONFIG_STATUS',
-          text: 'PNIO_CONFIG_STATUS',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_CONFIG_STATUS_ACTIVE',
-          text: 'PNIO_CONFIG_STATUS_ACTIVE',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_CONFIG_STATUS_READY',
-          text: 'PNIO_CONFIG_STATUS_READY',
-          type: 'bit'
-        },
-        {
-          portId: 'PNIO_CONFIG_STATUS_CFG_FAULT',
-          text: 'PNIO_CONFIG_STATUS_CFG_FAULT',
-          type: 'bit'
-        },
-
-        {
-          portId: 'PND_S1_PLC_RUN',
-          text: 'PND_S1_PLC_RUN',
-          type: 'bit'
-        },
-        {
-          portId: 'PND_S1_VALID_DATA_CYCLE',
-          text: 'PND_S1_VALID_DATA_CYCLE',
-          type: 'bit'
-        },
-        {
-          portId: 'PND_S1_OUTPUT_STATUS_GOOD',
-          text: 'PND_S1_OUTPUT_STATUS_GOOD',
-          type: 'bit'
-        },
-        {
-          portId: 'PND_S1_INPUT_STATUS_GOOD',
-          text: 'PND_S1_INPUT_STATUS_GOOD',
-          type: 'bit'
-        },
-        {
-          portId: 'PND_S1_DATA_LENGTH',
-          text: 'PND_S1_DATA_LENGTH',
-          type: 'uint16'
-        },
-        {
-          portId: 'PND_S1_INPUTS',
-          text: 'PND_S1_INPUTS',
-          type: 'uint16'
-        },
-
-        {
-          portId: 'ESM_COUNT',
-          text: 'ESM_COUNT',
-          type: 'uint16'
-        },
-        {
-          portId: 'ESM_1_TASKS_USED',
-          text: 'ESM_1_TASKS_USED',
-          type: 'uint16'
-        },
-        {
-          portId: 'ESM_1_TASK_1',
-          text: 'ESM_1_TASK_1',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_2',
-          text: 'ESM_1_TASK_2',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_3',
-          text: 'ESM_1_TASK_3',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_4',
-          text: 'ESM_1_TASK_4',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_5',
-          text: 'ESM_1_TASK_5',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_6',
-          text: 'ESM_1_TASK_6',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_7',
-          text: 'ESM_1_TASK_7',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_8',
-          text: 'ESM_1_TASK_8',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_9',
-          text: 'ESM_1_TASK_9',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_10',
-          text: 'ESM_1_TASK_10',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_11',
-          text: 'ESM_1_TASK_11',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_12',
-          text: 'ESM_1_TASK_12',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_13',
-          text: 'ESM_1_TASK_13',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_14',
-          text: 'ESM_1_TASK_14',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_15',
-          text: 'ESM_1_TASK_15',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_1_TASK_16',
-          text: 'ESM_1_TASK_16',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASKS_USED',
-          text: 'ESM_2_TASKS_USED',
-          type: 'uint16'
-        },
-        {
-          portId: 'ESM_2_TASK_1',
-          text: 'ESM_2_TASK_1',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_2',
-          text: 'ESM_2_TASK_2',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_3',
-          text: 'ESM_2_TASK_3',
-          type: 'bit'
-         },
-        {
-          portId: 'ESM_2_TASK_4',
-          text: 'ESM_2_TASK_4',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_5',
-          text: 'ESM_2_TASK_5',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_6',
-          text: 'ESM_2_TASK_6',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_7',
-          text: 'ESM_2_TASK_7',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_8',
-          text: 'ESM_2_TASK_8',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_9',
-          text: 'ESM_2_TASK_9',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_10',
-          text: 'ESM_2_TASK_10',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_11',
-          text: 'ESM_2_TASK_11',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_12',
-          text: 'ESM_2_TASK_12',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_13',
-          text: 'ESM_2_TASK_13',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_14',
-          text: 'ESM_2_TASK_14',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_15',
-          text: 'ESM_2_TASK_15',
-          type: 'bit'
-        },
-        {
-          portId: 'ESM_2_TASK_16',
-          text: 'ESM_2_TASK_16',
-          type: 'bit'
-        }
-      ],
-      rightArray: [
-        {
-          portId: 'PNIO_FORCE_FAILSAFE',
-          text: 'PNIO_FORCE_FAILSAFE',
-          type: 'bit'
-        },
-        {
-          portId: 'PND_S1_OUTPUTS',
-          text: 'PND_S1_OUTPUTS',
-          type: 'uint16'
-        }
-      ]
-    },
-  ];
-
+  var globalObjects = require("./global-objects.json");
   return globalObjects;
 };
 
@@ -826,18 +201,221 @@ exports.getIoModules = function (ticFileName) {
 };
 
 /**
- * Gets a list of program types available for a
- * PLCnext Technology configuration.
+ * Reads a PLCnext Control library metadata file.
+ * See separate documentation for json schemas. 
+ * @param {string} libmetaFileName - the name of a libmeta file.
+ * @returns {Object[]} library metadata in JSON.
+ */
+exports.readLibmeta = function (libmetaFileName) {
+
+  // Create default (empty) object.
+  var libmeta = [];
+
+  // Read meta configuration data.
+  var libmetaData = fs.readFileSync(libmetaFileName);
+
+  // Parse the XML library meta data.
+  var libmetaParser = new xml2js.Parser();
+  libmetaParser.parseString(libmetaData, function (err, result) {
+
+    // Iterate through the list of libraries in this file.
+    result.MetaConfigurationDocument.Library.forEach(library => {
+
+      // Create a new library object.
+      // It is assumed that there will only be one Library File 
+      // specified in any libmeta file. This is a reasonable
+      // assumption because otherwise, how does the ACF know 
+      // which library file contains the components listed
+      // in the ComponentIncludes files?
+      var newLibrary = {
+        name: library.$.name,
+        applicationDomain: library.$.applicationDomain,
+        File: {path: library.File[0].$.path},
+        TypeIncludes: [],
+        ComponentIncludes: []
+      };
+
+      // Iterate through the list of type includes for this library.
+      library.TypeIncludes.forEach(typeIncludes => {
+        // Iterate through the list of includes for this type.
+        typeIncludes.Include.forEach(include => {
+          newLibrary.TypeIncludes.push(include.$.path);
+        });
+      });
+      
+      // Iterate through the list of component includes for this library.
+      library.ComponentIncludes.forEach(componentIncludes => {
+        // Iterate through the list of includes for this component.
+        componentIncludes.Include.forEach(include => {
+          newLibrary.ComponentIncludes.push(include.$.path);
+        });
+      });
+
+      // Add the new library object to the array.
+      libmeta.push (newLibrary);
+    });
+  });
+  return libmeta;
+}
+
+/**
+ * Reads a PLCnext Control type metadata file.
+ * See separate documentation for json schemas. 
+ * @param {string} typemetaFileName - the name of a typemeta file.
+ * @returns {Object[]} type metadata in JSON.
+ */
+exports.readTypemeta = function (typemetaFileName) {
+
+  // Create default (empty) object.
+  var typemeta = [];
+
+  // Read meta configuration data.
+  var typemetaData = fs.readFileSync(typemetaFileName);
+
+  // Parse the XML type meta data.
+  var typemetaParser = new xml2js.Parser();
+  typemetaParser.parseString(typemetaData, function (err, result) {
+    // Iterate through the list of types in this file.
+    result.MetaConfigurationDocument.Types.forEach(types => {
+      if (typeof types === 'object') {
+        types.Type.forEach(type => {
+          // Create a new type object.
+            var newType = {
+            name: type.$.name
+          };
+          // Add the new type object to the array.
+          typemeta.push (newType);
+        });
+      }
+      else console.log("Warning: No types are defined.");
+    });
+  });
+  return typemeta;
+}
+
+/**
+ * Reads a PLCnext Control component metadata file.
+ * See separate documentation for json schemas. 
+ * @param {string} compmetaFileName - the name of a compmeta file.
+ * @returns {Object[]} component metadata in JSON.
+ */
+exports.readCompmeta = function (compmetaFileName) {
+
+  // Create default (empty) object.
+  var compmeta = [];
+
+  // Read meta configuration data.
+  var compmetaData = fs.readFileSync(compmetaFileName);
+
+  // Parse the XML component meta data.
+  var compmetaParser = new xml2js.Parser();
+  compmetaParser.parseString(compmetaData, function (err, result) {
+    // Iterate through the list of components in this file.
+    result.MetaConfigurationDocument.Component.forEach(component => {
+
+      // Create a new component object.
+      var newComponent = {
+        type: component.$.type,
+        ProgramIncludes: [],
+        Ports: []
+      };
+
+      // Iterate through the program includes.
+      component.ProgramIncludes.forEach(programIncludes => {
+        if (typeof programIncludes === 'object') {
+          // Iterate through the includes.
+          programIncludes.Include.forEach(include => {
+            newComponent.ProgramIncludes.push(include.$.path);
+          });
+        }
+        else console.log("No programs are defined.");
+      });
+
+      // Iterate through the ports.
+      component.Ports.forEach(ports => {
+        if (typeof ports === 'object') {
+          // Iterate through the ports.
+          ports.Port.forEach(port => {
+            newComponent.Ports.push({
+              "name": port.$.name,
+              "type": port.$.type,
+              "attributes": port.$.attributes,
+              "dimensions": (port.$.dimensions === "" ? null : parseInt(port.$.dimensions))
+            });
+          });
+        }
+        else console.log("No ports are defined.");
+      });
+
+      // Add the new component object to the array.
+      compmeta.push (newComponent);
+    });
+  });
+  return compmeta;
+}
+
+/**
+ * Reads a PLCnext Control program metadata file.
+ * See separate documentation for json schemas. 
+ * @param {string} progmetaFileName - the name of a progmeta file.
+ * @returns {Object[]} program metadata in JSON.
+ */
+exports.readProgmeta = function (progmetaFileName) {
+
+  // Create default (empty) object.
+  var progmeta = [];
+
+  // Read meta configuration data.
+  var progmetaData = fs.readFileSync(progmetaFileName);
+
+  // Parse the XML program meta data.
+  var progmetaParser = new xml2js.Parser();
+  progmetaParser.parseString(progmetaData, function (err, result) {
+    // Iterate through the list of programs in this file.
+    result.MetaConfigurationDocument.Program.forEach(program => {
+
+      // Create a new program object.
+      var newProgram = {
+        type: program.$.type,
+        Ports: []
+      };
+
+      // Iterate through the ports.
+      program.Ports.forEach(ports => {
+        if (typeof ports === 'object') {
+          // Iterate through the ports.
+          ports.Port.forEach(port => {
+            newProgram.Ports.push({
+              "name": port.$.name,
+              "type": port.$.type,
+              "attributes": port.$.attributes,
+              "dimensions": (port.$.dimensions === "" ? null : parseInt(port.$.dimensions))
+            });
+          });
+        }
+        else console.log("No ports are defined.");
+      });
+
+      // Add the new component object to the array.
+      progmeta.push (newProgram);
+    });
+  });
+  return progmeta;
+}
+
+/**
+ * Gets a list of component and program types available
+ * for a specific PLCnext Technology project.
  * See separate documentation for json schemas. 
  * @param {string} metaConfigFileName - the name of a meta configuration file.
  * @returns {Object[]} a list of defined programs.
  */
-exports.getPrograms = function (metaConfigFilename) {
+exports.getTypes = function (metaConfigFilename) {
 
-  // Construct information about all the programs in the specified project.
-  var libMetaExtension = '.libmeta';
-
-  var programs = [];
+  // Construct information about all the components and programs referenced
+  // in the specified configuration file.
+  var componentTypes = [];
+  var programTypes = [];
 
   //TODO: Include checks on the existence of all files.
   //TODO: Fully qualfiy each program (Library, Component etc.).
@@ -851,95 +429,130 @@ exports.getPrograms = function (metaConfigFilename) {
     metaConfigData,
     function (err, result) {
 
-      // Iterate through the list of paths where library metadata can be found.
-      result.MetaConfigurationDocument.MetaIncludes.forEach(
-        metaIncludes => {
-          metaIncludes.MetaInclude.forEach(
-            metaInclude => {
-              var libPath = path.dirname(metaConfigFilename) +
-                path.sep + metaInclude.$.path;
+      // Iterate through the list of library metadata files.
+      result.MetaConfigurationDocument.Includes.forEach(
+        includes => {
+          includes.Include.forEach(
+            include => {
+              var libMetaFile = path.dirname(metaConfigFilename) +
+                path.sep + include.$.path;
 
-              // All we have from the meta config file is the *path* to
-              // the library metadata.
-              // We also know about the .libmeta file extension, but we
-              // don't know the actual name of the library meta file(s) ...
-              // ... so find them.
-              glob.sync(libPath + path.sep + '*' + libMetaExtension).forEach(libMetaFile => {
+              // glob.sync(libPath + path.sep + '*' + libMetaExtension).forEach(libMetaFile => {
 
-                // Read the library metadata.
-                var libMetaData = fs.readFileSync(libMetaFile);
-                var libConfigParser = new xml2js.Parser();
-                libConfigParser.parseString(libMetaData, function (err, result) {
+              // Read the library metadata.
+              var libMetaData = fs.readFileSync(libMetaFile);
+              var libConfigParser = new xml2js.Parser();
+              libConfigParser.parseString(libMetaData, function (err, result) {
 
-                  // Iterate through the list of libraries for this ... library.
-                  result.MetaConfigurationDocument.Library.forEach(library => {
-                    // Iterate through the list of files for this library.
-                    library.File.forEach(file => {
+                // Iterate through the list of libraries for this ... library.
+                result.MetaConfigurationDocument.Library.forEach(library => {
+                  // Iterate through the list of files for this library.
+                  library.File.forEach(file => {
+                    // This is the Shared Object library!
+                    // Do something with this?
+                  });
+                  // Iterate through the list of type includes for this library.
+                  library.TypeIncludes.forEach(typeIncludes => {
+                    // Iterate through the list of includes for this type.
+                    typeIncludes.Include.forEach(include => {
+                      // Do something with this?
+                      // What is the format of the .typemeta file?
                     });
-                    // Iterate through the list of component includes
-                    // for this library.
-                    library.ComponentIncludes.forEach(componentIncludes => {
-                      // Iterate through the list of includes for this component.
-                      componentIncludes.Include.forEach(include => {
-                        var compMetaFile = path.dirname(libMetaFile) +
-                          path.sep + include.$.path;
+                  });
+                  // Iterate through the list of component includes
+                  // for this library.
+                  library.ComponentIncludes.forEach(componentIncludes => {
+                    // Iterate through the list of includes for this component.
+                    componentIncludes.Include.forEach(include => {
+                      var compMetaFile = path.dirname(libMetaFile) +
+                        path.sep + include.$.path;
 
-                        // Read the Component metadata
-                        var compMetaData = fs.readFileSync(compMetaFile);
-                        var compConfigParser = new xml2js.Parser();
-                        compConfigParser.parseString(
-                          compMetaData,
-                          function (err, result) {
+                      // Read the Component metadata
+                      var compMetaData = fs.readFileSync(compMetaFile);
+                      var compConfigParser = new xml2js.Parser();
+                      compConfigParser.parseString(
+                        compMetaData,
+                        function (err, result) {
 
-                            // Iterate through the list of components for this ... component.
-                            result.MetaConfigurationDocument.Component.forEach(component => {
-                              // Iterate through the list of program includes for this component.
-                              component.ProgramIncludes.forEach(programIncludes => {
-                                // Iterate through the list of includes for this program.
-                                programIncludes.Include.forEach(include => {
-                                  var progMetaFile = path.dirname(compMetaFile) + path.sep + include.$.path;
+                          // Iterate through the list of components for this ... component.
+                          result.MetaConfigurationDocument.Component.forEach(component => {
+                            var newComponent = { key: library.$.name + '.' + component.$.type, name: component.$.type, leftArray: [], rightArray: [] };
 
-                                  // Read the Program metadata
-                                  var progMetaData = fs.readFileSync(progMetaFile);
-                                  var progConfigParser = new xml2js.Parser();
-                                  progConfigParser.parseString(progMetaData, function (err, result) {
+                            // Iterate through the list of ports for this component.
+                            component.Ports.forEach(ports => {
+                              // Iterate through each port in this list.
+                              ports.Port.forEach(port => {
+                                var dimensions = port.$.dimensions;
+                                // TODO: attributes may include more information
+                                if (port.$.attributes === 'Input')
+                                  newComponent.leftArray.push ({
+                                    portId: port.$.name, text: port.$.name, type: port.$.type + (
+                                      dimensions === ''
+                                        ? ''
+                                        : '[' + dimensions + ']'
+                                    )
+                                  });
+                                // TODO: attributes may include more information
+                                if (port.$.attributes === 'Output')
+                                  newComponent.rightArray.push({
+                                    portId: port.$.name, text: port.$.name,
+                                    type: port.$.type + (
+                                      dimensions === ''
+                                        ? ''
+                                        : '[' + dimensions + ']'
+                                    )
+                                  });
+                              });
+                            });
+                            componentTypes.push(newComponent);
 
-                                    // Iterate through the list of programs for this ... program.
-                                    result.MetaConfigurationDocument.Program.forEach(program => {
-                                      var newNode = { key: library.$.name + '.' + component.$.name + '.' + program.$.name, name: program.$.name, leftArray: [], rightArray: [] };
+                            // Iterate through the list of program includes for this component.
+                            component.ProgramIncludes.forEach(programIncludes => {
+                              // Iterate through the list of includes for this program.
+                              programIncludes.Include.forEach(include => {
+                                var progMetaFile = path.dirname(compMetaFile) + path.sep + include.$.path;
 
-                                      // Iterate through the list of ports for this program.
-                                      program.Ports.forEach(ports => {
-                                        // Iterate through each port in this list.
-                                        ports.Port.forEach(port => {
-                                          var multiplicity = port.$.multiplicity;
+                                // Read the Program metadata
+                                var progMetaData = fs.readFileSync(progMetaFile);
+                                var progConfigParser = new xml2js.Parser();
+                                progConfigParser.parseString(progMetaData, function (err, result) {
+
+                                  // Iterate through the list of programs for this ... program.
+                                  result.MetaConfigurationDocument.Program.forEach(program => {
+                                    var newNode = { key: library.$.name + '.' + component.$.name + '.' + program.$.name, name: program.$.name, leftArray: [], rightArray: [] };
+
+                                    // Iterate through the list of ports for this program.
+                                    program.Ports.forEach(ports => {
+                                      // Iterate through each port in this list.
+                                      ports.Port.forEach(port => {
+                                        var multiplicity = port.$.multiplicity;
+                                          // TODO: attributes may include more information
                                           if (port.$.kind === 'Input')
-                                            newNode.leftArray.push ({
-                                              portId: port.$.name, text: port.$.name, type: port.$.type + (
-                                                multiplicity === '1'
-                                                  ? ''
-                                                  : '[' + multiplicity + ']'
-                                              )
-                                            });
-                                          if (port.$.kind === 'Output')
-                                            newNode.rightArray.push({
-                                              portId: port.$.name, text: port.$.name,
-                                              type: port.$.type + (
-                                                multiplicity === '1'
-                                                  ? ''
-                                                  : '[' + multiplicity + ']'
-                                              )
-                                            });
-                                        });
+                                          newNode.leftArray.push ({
+                                            portId: port.$.name, text: port.$.name, type: port.$.type + (
+                                              multiplicity === '1'
+                                                ? ''
+                                                : '[' + multiplicity + ']'
+                                            )
+                                          });
+                                        if (port.$.kind === 'Output')
+                                          newNode.rightArray.push({
+                                            portId: port.$.name, text: port.$.name,
+                                            type: port.$.type + (
+                                              multiplicity === '1'
+                                                ? ''
+                                                : '[' + multiplicity + ']'
+                                            )
+                                          });
                                       });
-                                      programs.push(newNode);
                                     });
+                                    programTypes.push(newNode);
                                   });
                                 });
                               });
-                            }
-                          );
-                        });
+                            });
+                          }
+                        );
                       });
                     });
                   });
