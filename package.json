@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Wexford/plcnext.git"
+    "url": "https://github.com/martinboers/plcnext.git"
   },
   "keywords": [
     "plcnext",
@@ -18,9 +18,9 @@
   "author": "Martin Boers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Wexford/plcnext/issues"
+    "url": "https://github.com/martinboers/plcnext/issues"
   },
-  "homepage": "https://github.com/Wexford/plcnext#readme",
+  "homepage": "https://github.com/martinboers/plcnext#readme",
   "dependencies": {
     "glob": "^7.1.2",
     "npm": "^5.7.1",

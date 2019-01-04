@@ -23,6 +23,12 @@ describe("PC Worx Integrator", function() {
   it("has a readProgmeta method", function(){
     expect(plcnext.readProgmeta).to.be.a('function');
   });
+  it("has a readEsmConfig method", function(){
+    expect(plcnext.readEsmConfig).to.be.a('function');
+  });
+  it("has a readGdsConfig method", function(){
+    expect(plcnext.readGdsConfig).to.be.a('function');
+  });
   it("has a getPrograms method", function(){
     expect(plcnext.getPrograms).to.be.a('function');
   });
@@ -94,6 +100,24 @@ describe("PC Worx Integrator", function() {
       var progmeta = plcnext.readProgmeta("/opt/plcnext/projects/PCWE/Libs/Pxc.Tcs.MyProject/MyProjectComponent/MyProjectProgram/MyProjectProgram.progmeta");
       expect(progmeta).to.be.an('array');
       expect(progmeta).to.have.lengthOf(1);
+    });
+  });
+
+  describe("Read ESM configuration", function() {
+    it("reads ESM configuration and returns it in JSON", function() {
+      var esmconfig = plcnext.readEsmConfig("/opt/plcnext/projects/PCWE/Plc/Esm/PCWE.esm.config");
+      expect(esmconfig).to.be.an('object');
+      expect(esmconfig.CyclicTasks).to.be.an('array');
+      expect(esmconfig.CyclicTasks).to.have.lengthOf(1);
+    });
+  });
+
+  describe("Read GDS configuration", function() {
+    it("reads GDS configuration and returns it in JSON", function() {
+      var gdsconfig = plcnext.readGdsConfig("/opt/plcnext/projects/PCWE/Plc/Gds/PCWE.gds.config");
+      expect(gdsconfig).to.be.an('object');
+      expect(gdsconfig.Connectors).to.be.an('array');
+      expect(gdsconfig.Connectors).to.have.lengthOf(57);
     });
   });
 
